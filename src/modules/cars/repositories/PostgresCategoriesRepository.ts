@@ -1,5 +1,5 @@
-import { Category } from "../model/Category";
-import { ICreateCategoryDTO, ICategoryRepository  } from "./ICategoriesRepository";
+import { Category } from "../modules/cars/model/Category";
+import { ICategoryRepository, ICreateCategoryDTO } from "./ICategoriesRepository";
 
 class PostgresCategoriesRepository implements ICategoryRepository {
 
@@ -16,4 +16,4 @@ class PostgresCategoriesRepository implements ICategoryRepository {
 
 }
 
-export { PostgresCategoriesRepository }
+export { PostgresCategoriesRepository };
