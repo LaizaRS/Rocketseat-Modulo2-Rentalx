@@ -1,4 +1,4 @@
-import { Category } from "../modules/cars/model/Category";
+import { Category } from "../model/Category";
 
 interface ICreateCategoryDTO  {
   name: string;
@@ -8,7 +8,7 @@ interface ICreateCategoryDTO  {
 interface ICategoryRepository {
   findByName(name: string): Category | undefined;
   list(): Category[];
-  creat({name, description}: ICreateCategoryDTO): void;
+  create({name, description}: ICreateCategoryDTO): void;
 }
 
 export type { ICategoryRepository, ICreateCategoryDTO };

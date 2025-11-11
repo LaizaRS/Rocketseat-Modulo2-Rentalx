@@ -1,4 +1,4 @@
-import { Category } from "../modules/cars/model/Category";
+import { Category } from "../model/Category";
 import { ICategoryRepository, ICreateCategoryDTO } from "./ICategoriesRepository";
 
 class PostgresCategoriesRepository implements ICategoryRepository {
